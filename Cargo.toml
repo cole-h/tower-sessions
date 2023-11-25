@@ -140,3 +140,7 @@ required-features = ["axum-core", "mysql-store", "deletion-task"]
 [[example]]
 name = "strongly-typed"
 required-features = ["axum-core", "memory-store"]
+
+[patch.crates-io]
+axum-core = { git = "https://github.com/cole-h/axum", branch = "axum-0.7-testing" }
+tower-cookies = { git = "https://github.com/cole-h/tower-cookies", branch = "axum-0.7-testing" }
